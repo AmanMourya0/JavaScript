@@ -20,3 +20,24 @@ const myfun =function() {
 }
 // console.log(typeof null); // >>> object
 // console.log(typeof myfun); //function
+
+
+
+// *******************************************
+
+// stack (primitive) and heap (non-primitive)
+
+// stack
+// let username="amnaaj"
+// let user1=username // copy of original value is assigned
+// username="qwerty"
+// console.log(username,user1); // username=="qwerty";user1="amnaaj"
+
+// heap
+let user1={
+    name:"qw1",
+    email:"qw1@gamil.com",
+}
+let user2=user1 // original refference is assigned
+user2.name="aman"
+console.log(user1);
